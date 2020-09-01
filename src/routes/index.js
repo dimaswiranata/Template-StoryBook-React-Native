@@ -2,7 +2,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { GetStarted, Launch, SignIn } from '../Screen';
+import { GetStarted, Launch, SignIn, Example } from '../Screen';
 import Storybook from '../../storybook';
 
 
@@ -31,6 +31,10 @@ function StackRouter() {
       <Stack.Screen
         name="SignIn"
         component={SignIn}
+      />
+      <Stack.Screen
+        name="Example"
+        component={Example}
       />
     </Stack.Navigator>
   );
